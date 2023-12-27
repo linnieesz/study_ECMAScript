@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+
+    <script>
+
+        // destructuring
+        let frutas = ['Abacaxi', 'Uva', 'Pera', 'Mamão'];
+
+        // let a = frutas[0]
+        // let b = frutas[1]
+        // let c = frutas[2]
+
+        // console.log(a, b, c)
+        
+        // let [ a, b, , c ] = frutas; //pular indice
+
+        let [ a, b, c, d, e = 'Banana'] = frutas
+        
+        console.log(a, b, c, d, e)
+
+        let coisas = [['Abacaxi', 'Uva', 'Pera', 'Mamão'], ['José', 'Maria']];
+
+        let [ [, , p], [ , n2]] = coisas;
+
+        console.log(n2)
+        console.log(p)
+
+    </script>
+</head>
+
+<body>
+    <div id="output"></div>
+</body>
+
+</html>
